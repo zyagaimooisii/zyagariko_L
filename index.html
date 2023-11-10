@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        .top-bar {
-            background-color: black;
-            color: white;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-        }
-        .menu-button {
-            float: right;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            position: relative;
-            cursor: pointer;
-            margin-right: 20px;
-        }
-        .menu-button span {
-            display: block;
-            width: 70%;
-            height: 2px;
-            background-color: white;
-            margin: 4px auto;
-        }
-        .menu-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            top: 100%;
-            background-color: white;
-            padding: 10px;
-            border: 1px solid black;
-            border-radius: 10px;
-            width: 200px; /* 吹き出しの横幅を大きく */
-            height: 300px; /* 吹き出しの縦幅を大きく */
-        }
-        .menu-content img {
-            width: 50%;
-            float: left; /* 画像を左に寄せる */
-        }
-        .menu-content .text {
-            float: right;
-            width: 50%;
-        }
-        .menu-content a {
-            color: black; /* リンクの文字色を黒に */
-        }
-        .menu-content hr {
-            border: none;
-            border-top: 1px solid lightgray;
-            margin: 10px 0;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-            margin-top: 70px;
-        }
-        .description {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid black;
-            border-radius: 10px;
-        }
-    </style>
-    <script>
-        window.onload = function() {
-            document.querySelector('.menu-button').addEventListener('click', function() {
-                var menuContent = document.querySelector('.menu-content');
-                if (menuContent.style.display === 'none') {
-                    menuContent.style.display = 'block';
-                } else {
-                    menuContent.style.display = 'none';
-                }
-            });
-        };
-    </script>
+<style>
+.top-bar {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.menu-button {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.menu-button span {
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  margin: 4px auto;
+}
+.menu-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+}
+.menu-content img {
+  width: 100%;
+  display: block;
+}
+.menu-content .text {
+  width: 100%;
+  clear: both;
+}
+.menu-content a {
+  color: black;
+}
+.menu-content hr {
+  border: none;
+  border-top: 1px solid lightgray;
+  margin: 10px 0;
+}
+iframe {
+  width: 100%;
+  height: 500px;
+  margin-top: 70px;
+}
+.description {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</style>
+<script>
+window.onload = function() {
+  document.querySelector('.menu-button').addEventListener('click', function() {
+    var menuContent = document.querySelector('.menu-content');
+    if (menuContent.style.display === 'none') {
+      menuContent.style.display = 'block';
+    } else {
+      menuContent.style.display = 'none';
+    }
+  });
+};
+</script>
 </head>
 <body>
-    <div class="top-bar">
-        <div class="menu-button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="menu-content">
-                <img src="https://www.example.com/image.jpg" alt="Image">
-                <div class="text">
-                    <hr>
-                    <p><a href="#">Test 1</a></p>
-                    <hr>
-                    <p><a href="#">Test 2</a></p>
-                    <hr>
-                    <p><a href="#">Test 3</a></p>
-                </div>
-            </div>
-        </div>
+<div class="top-bar">
+  <div class="menu-button">
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="menu-content">
+      <img src="https://www.example.com/image.jpg" alt="Image">
+      <div class="text">
+        <hr>
+        <p><a href="#">Test 1</a></p>
+        <hr>
+        <p><a href="#">Test 2</a></p>
+        <hr>
+        <p><a href="#">Test 3</a></p>
+      </div>
     </div>
-    <iframe src="https://www.example.com"></iframe>
-    <div class="description">
-        <p>ここに説明を書くことができます。</p>
-    </div>
+  </div>
+</div>
+<iframe src="https://www.example.com"></iframe>
+<div class="description">
+  <p>ここに説明を書くことができます。</p>
+</div>
 </body>
 </html>
