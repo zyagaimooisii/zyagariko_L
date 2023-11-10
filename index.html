@@ -35,13 +35,20 @@
   background-color: white;
   padding: 10px;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 15px; /* 枠の縁を丸く */
   width: 200px;
   height: 300px;
+  text-align: center; /* 中央揃え */
 }
 .menu-content img {
-  width: 100%;
-  display: block;
+  width: 30%; /* 画像のサイズを小さく */
+  float: left; /* 画像を左に寄せる */
+}
+.menu-content .name {
+  float: right;
+  width: 70%;
+  font-weight: bold; /* 太字 */
+  line-height: 30px; /* 画像と同じ高さに */
 }
 .menu-content .text {
   width: 100%;
@@ -88,6 +95,7 @@ window.onload = function() {
     <span></span>
     <div class="menu-content">
       <img src="https://www.example.com/image.jpg" alt="Image">
+      <div class="name">Name</div>
       <div class="text">
         <hr>
         <p><a href="#">Test 1</a></p>
