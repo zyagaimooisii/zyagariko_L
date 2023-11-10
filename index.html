@@ -76,17 +76,14 @@ iframe {
 </style>
 <script>
 window.onload = function() {
-  var menuButton = document.querySelector('.menu-button');
-  var menuContent = document.querySelector('.menu-content');
-  menuButton.addEventListener('click', function() {
+  document.querySelector('.menu-button').addEventListener('click', function() {
+    var menuContent = document.querySelector('.menu-content');
     if (menuContent.style.display === 'none') {
       menuContent.style.display = 'block';
     } else {
       menuContent.style.display = 'none';
     }
   });
-  // ページがロードされたときにメニューコンテンツを表示する
-  menuContent.style.display = 'block';
 };
 </script>
 </head>
