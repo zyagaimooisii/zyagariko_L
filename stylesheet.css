@@ -1,0 +1,68 @@
+.top-bar {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.menu-button {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.menu-button span {
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  margin: 4px auto;
+}
+.menu-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px; /* 枠の縁を丸く */
+  width: 200px;
+  height: 300px;
+  text-align: center; /* 中央揃え */
+}
+.menu-content img {
+  width: 30%; /* 画像のサイズを小さく */
+  float: left; /* 画像を左に寄せる */
+}
+.menu-content .name {
+  float: right;
+  width: 70%;
+  font-weight: bold; /* 太字 */
+  z-index: 1; /* 最前面に表示 */
+}
+.menu-content .text {
+  width: 100%;
+  clear: both;
+}
+.menu-content a {
+  color: black;
+}
+.menu-content hr {
+  border: none;
+  border-top: 1px solid lightgray;
+  margin: 10px 0;
+}
+.description {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.name{
+  color: black;
