@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ゲームサイト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            background-color: black;
+            height: 50px;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+        .menu-button {
+            cursor: pointer;
+            margin-right: 15px;
+        }
+        .menu-button div {
+            width: 30px;
+            height: 2px;
+            background-color: white;
+            margin: 6px 0;
+        }
+        .menu {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 200px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .menu a {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .game-link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            border-left: 1px solid lightgray;
+            padding-left: 10px;
+            width: 50%;
+        }
+        .game-link img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border-right: 1px solid lightgray;
+            padding-right: 10px;
+        }
+        .close-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="menu-button" onclick="document.querySelector('.menu').style.display='block'">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        ゲームサイト
+    </div>
+    <div class="menu">
+        <div class="close-button" onclick="document.querySelector('.menu').style.display='none'">×</div>
+        <a href="home.html">ホーム</a>
+        <a href="about.html">私たちについて</a>
+        <a href="contact.html">お問い合わせ</a>
+    </div>
+    <h1>ようこそ、ゲームサイトへ！</h1>
+    <p>以下のリンクからゲームを選んでプレイしてください。</p>
+    <div class="game-link">
+        <img src="game1-image.jpg" alt="ゲーム1の画像">
+        <div>
+            <a href="game1.html">ゲーム1</a>
+            <hr style="border-top: 1px solid lightgray;">
+            <p>ここに説明を書く</p>
+        </div>
+    </div>
+    <!-- 他のゲームリンクをここに追加 -->
+</body>
+</html>
