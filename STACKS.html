@@ -20,6 +20,14 @@ window.onload = function() {
       menuContent.style.display = 'none';
     }
   });
+    // ボタンにイベントリスナーを追加
+  var buttons = document.querySelectorAll('.change-iframe');
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      var url = this.getAttribute('data-url');
+      document.querySelector('iframe').src = url;
+    });
+  });
 };
 </script>
   <title>2048game</title>
@@ -45,6 +53,12 @@ window.onload = function() {
   </div>
 </div>
 <iframe src="https://zyagaimooisii.github.io/game-date/STACKS.html"></iframe>
+  <!-- ボタンを追加 -->
+  <h2>
+    遊べない時は下のボタンで読み込む場所を変えてみてね
+  </h2>
+  <button class="change-iframe" data-url="https://zyagaimooisii.github.io/game-date/STACKS">githubから読み込む</button>
+<button class="change-iframe" data-url="https://evergreen-observant-acapella.glitch.me/STACKS.html">Glitchから読み込む</button>
 <h3>説明とクレジット</h3>
   <div class="description">
   <p>ちょうどいいタイミングで画面をタップして、四角を積み上げよう！
