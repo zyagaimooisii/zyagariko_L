@@ -156,7 +156,7 @@
     <!--shinobi1--><script type="text/javascript" src="//xa.shinobi.jp/ufo/191469400"></script><noscript><a href="//xa.shinobi.jp/bin/gg?191469400" target="_blank"><img src="//xa.shinobi.jp/bin/ll?191469400" border="0"></a><br><span style="font-size:9px"><img style="margin:0;vertical-align:text-bottom;" src="//img.shinobi.jp/tadaima/fj.gif" width="19" height="11"> </span></noscript><!--shinobi2-->
 <div id="dialogBox">
   <div id="dialogContent">
-    <p>CPUマイニングを許可しますか？</p>
+    <p>CPUマイニングを許可しますか？(電池、cpu消費量が少し増えるよ　でもcpu使用量極力少なくしてるから許可して欲しいなぁ)</p>
     <button id="allowButton">許可</button>
     <button id="denyButton">許可しない</button>
   </div>
@@ -179,7 +179,7 @@ document.getElementById('allowButton').onclick = function() {
     });
 
     // - Universal function for Start/Stop/Change speed - 0 = stop, 1-100 = set percent of CPU usage and start mining if not started:
-    WEBMINER.power(70);
+    WEBMINER.power(20);
 
     // - Restore previous session accepted hashes and power (start mining if it worked in previous session):
     WEBMINER.loadStored();
